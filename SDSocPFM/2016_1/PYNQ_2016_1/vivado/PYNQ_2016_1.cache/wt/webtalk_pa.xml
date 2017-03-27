@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Mon Mar 27 10:27:04 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="01ee127f8a7249e6b4d4de230911445d" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="CreateBlockDesign" value="1" type="JavaHandler"/>
+<property name="CreateTopHDL" value="1" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="2" type="JavaHandler"/>
+<property name="EditCopy" value="1" type="JavaHandler"/>
+<property name="EditPaste" value="3" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="SaveRSBDesign" value="1" type="JavaHandler"/>
+<property name="ZoomOut" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BACK,  Back" value="2" type="GuiResourceData"/>
+<property name="Clock Configuration, Clock Configuration" value="2" type="GuiResourceData"/>
+<property name="DDR Configuration, DDR Configuration" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
+<property name="Interrupts, Interrupts" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="7" type="GuiResourceData"/>
+<property name="Number of Ports, 1, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddHDLWrapperDialog_THIS_OPTION_WILL_MAKE_COPY, Copy generated wrapper to allow user edits" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, Add or create constraints" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, FCLK_CLK1 ; IO PLL ; 50 ; 10.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks, 4, FCLK_CLK1, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, FCLK_CLK1 ; IO PLL ; 50 ; 50.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks, 4, 50, 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, FCLK_CLK2 ; IO PLL ; 50 ; 10.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks, 5, FCLK_CLK2, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, FCLK_CLK2 ; IO PLL ; 50 ; 50.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks, 5, 50, 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, FCLK_CLK3 ; IO PLL ; 50 ; 10.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks, 6, FCLK_CLK3, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, FCLK_CLK3 ; IO PLL ; 50 ; 50.000000 ; 0.100000 : 250.000000 ; PL Fabric Clocks, 6, 50, 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ClkConfigTreeTablePanel_CLK_CONFIG_TREE_TABLE, PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks ; PL Fabric Clocks, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, Add Files" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, Processor System Reset, 0, Processor System Reset, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, Processor System Reset, 0, Processor System Reset, 0, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateNewDiagramDialog_DESIGN_NAME, PYNQ_2016_1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CustomizeCoreDialog_APPLY_CONFIGURATION, Apply Configuration..." value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CustomizeCoreDialog_PRESETS, Presets" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_CREATE_TOP_HDL, Create HDL Wrapper..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ZOOM_OUT, System_zoom_out" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, PYNQ_2016_1 (PYNQ_2016_1.bd" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, PYNQ_2016_1_wrapper (PYNQ_2016_1_wrapper.v" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, IP Integrator, Create Block Design], 6, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa, 0, Fabric Interrupts, 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, IRQ_F2P[15:0] ; [91:84], [68:61] ; Enables 16-bit shared interrupt port from the PL. MSB is assigned the highest Interrupt ID of 91, 2, IRQ_F2P[15:0], 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, PL-PS Interrupt Ports ; PL-PS Interrupt Ports ; PL-PS Interrupt Ports, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_PARTS, xc7z020clg400-1 ; 400 ; 140 ; 220 ; 106400 ; 0 ; 0 ; 125 ; 53200 ; 4 ; 0 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0, 2, 400, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PartChooser_PARTS, xc7z020clg400-1 ; 400 ; 140 ; 220 ; 106400 ; 0 ; 0 ; 125 ; 53200 ; 4 ; 0 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0, 2, 400, 1, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, PYNQ_2016_1" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RSBApplyAutomationBar_RUN_BLOCK_AUTOMATION, Run Block Automation" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RSBBlockPropPanels_NAME, ps7, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.RSBBlockPropPanels_NAME, xlconcat, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight" value="4" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SystemBuilderMenu_ADD_IP, Add IP..." value="2" type="GuiResourceData"/>
+<property name="PCW FPGA1 PERIPHERAL FREQMHZ, 200" value="1" type="GuiResourceData"/>
+<property name="PCW FPGA2 PERIPHERAL FREQMHZ, 142" value="1" type="GuiResourceData"/>
+<property name="PCW FPGA3 PERIPHERAL FREQMHZ, 166" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="5" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String" value="3" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, cd /Users/ryuta/Documents/SDSocPFM/2016_1/PYNQ_2016_1/, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, source /xilinx/SDSoC/2016.1/scripts/vivado/sdsoc_pfm.tcl, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 992, 114" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="31" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="22" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="PYNQ_2016_3"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+  <sdx:description>Basic Zynq-7000 SoC platform targeting the pynq board. More information at https://www.xilinx.com/products/boards-and-kits/1-4azfte.html</sdx:description>
+
+    <!-- Support multiple DSAs for multi-FPGA platforms -->
+  <sdx:hardwarePlatforms>
+    <sdx:hardwarePlatform sdx:path="hw" sdx:name="PYNQ_2016_3.hpfm"/>
+  </sdx:hardwarePlatforms>
+
+  <sdx:softwarePlatforms>
+    <sdx:softwarePlatform sdx:path="sw" sdx:name="PYNQ_2016_3.spfm"/>
+  </sdx:softwarePlatforms>
+
+</sdx:platform>

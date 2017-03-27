@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0"
+		MinorVersion="33">
+	<CompositeFile CompositeFileTopName="PYNQ_2016_3"
+			CanBeSetAsTop="false"
+			CanDisplayChildGraph="true">
+		<Description>Composite Fileset</Description>
+		<Generation Name="SYNTHESIS"
+				State="STALE"
+				Timestamp="1490609654"/>
+		<Generation Name="IMPLEMENTATION"
+				State="STALE"
+				Timestamp="1490609654"/>
+		<Generation Name="SIMULATION"
+				State="STALE"
+				Timestamp="1490609654"/>
+		<FileCollection Name="SOURCES"
+				Type="SOURCES">
+			<File Name="ip\PYNQ_2016_3_processing_system7_0_0\PYNQ_2016_3_processing_system7_0_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="ps7"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\PYNQ_2016_3_proc_sys_reset_0_0\PYNQ_2016_3_proc_sys_reset_0_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="proc_sys_reset_0"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="ip\PYNQ_2016_3_xlconcat_0_0\PYNQ_2016_3_xlconcat_0_0.xci"
+					Type="IP">
+				<Instance HierarchyPath="xlconcat"/>
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="true"
+						IsStatusTracked="true"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="hdl\PYNQ_2016_3.v"
+					Type="Verilog">
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="false"
+						IsStatusTracked="false"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="SIMULATION"/>
+			</File>
+			<File Name="PYNQ_2016_3_ooc.xdc"
+					Type="XDC">
+				<Properties IsEditable="false"
+						IsVisible="true"
+						Timestamp="0"
+						IsTrackable="false"
+						IsStatusTracked="false"/>
+				<Library Name="xil_defaultlib"/>
+				<UsedIn Val="SYNTHESIS"/>
+				<UsedIn Val="IMPLEMENTATION"/>
+				<UsedIn Val="OUT_OF_CONTEXT"/>
+			</File>
+		</FileCollection>
+	</CompositeFile>
+</Root>
