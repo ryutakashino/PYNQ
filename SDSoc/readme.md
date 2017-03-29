@@ -1,0 +1,3 @@
+このディレクトリ下にあるディレクトリはSDSocで作成したプロジェクトごとにso,tcl,bitファイルとそれらを実行したipynbファイルがあります。
+このSDSocプロジェクトを作るにあたって目標にしたのが、tkat0さんの　https://github.com/tkat0/pynqmmult/　です。自分で作ったSDSocプラットフォームを用いてビルドしたmmultプロジェクトが同じ挙動を示すか確かめました。
+pynqmmult-masterディレクトリがtkat0さんの作成した
