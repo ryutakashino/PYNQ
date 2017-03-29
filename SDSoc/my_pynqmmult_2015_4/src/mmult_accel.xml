@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xd:data xmlns:xd="http://www.xilinx.com/xd">
-  <xd:accel name="mmult_accel" platform="PYNQ_2015_4" compiler="g++" srcfile="mmult_accel.cpp" srcpath="C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src" flags="-IC:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src -IC:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src -Wall -O3 -fmessage-length=0 -MMD -MP -fPIC -D __SDSCC__" clk_id="2" ip_requires_adapter="1" ip_is_rtl="0" vlnv="" is_opencl="0" asmfile="mmult_accel.s"/>
-</xd:data>
