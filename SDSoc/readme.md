@@ -16,4 +16,4 @@ pynqmmult-master,　my_pynqmmult_2015_4,　my_pynqmmult_2016_1はその試行錯
 SDSocでの開発の流れを図示したものが以下です。
 ![](./SDSoc.png)  
 そして、my_pynqmmult_2016_1で作成したPL回路は以下になりました。
-![](./my_pynqmmult_2016_1/PYNQ_2016_1 - [C__Users_ryuta_Documents_SDSoc_2016_1_test_mmult_2016_1_SDRelease__sds_p0_ipi_PYNQ_2016_1.xpr] - Vivado 2016.1 2017_03_29 19_13_20.png)  
+![](./my_pynqmmult_2016_1/test_mmult_bd_2016_1.png)  
