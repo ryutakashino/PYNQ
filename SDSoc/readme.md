@@ -1,6 +1,6 @@
 各々のディレクトリはSDSocで作成したso,tcl,bitファイルとそれらをPYNQ上で実行したipynbファイルを持ちます。
 
-../SDSocPFM以下にあるプラットフォームをつくるにあたって、到達目標にしたのが、tkat0さんの　https://github.com/tkat0/pynqmmult/　と同じものを作成するというものです。
+../SDSocPFM以下にあるプラットフォームをつくるにあたって、到達目標にしたのが、tkat0さんのhttps://github.com/tkat0/pynqmmult/　と同じものを作成するというものです。
 pynqmmult-master はtkat0さんの作成したディレクトリの必要なところのみを取り出し、改変したものです。
 my_pynqmmult_2015_4  
 my_pynqmmult_2016_1  
