@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:data xmlns:xd="http://www.xilinx.com/xd">
+  <xd:source name="mmult.cpp" compiler="g++" objfile="src/mmult.o" srcpath="C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src" flags="-IC:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src -IC:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src -Wall -O3 -fmessage-length=0 -MMD -MP -fPIC -D __SDSCC__"/>
+</xd:data>
