@@ -3,6 +3,6 @@ led_overlay.bitとled_overlay.tclは以下のような流れで生成されま�
  ![](./led_overlay2.png)
  
  この２つのファイルを用いて、LEDの点灯をしたのが「./自作bitファイルの読み込み.ipynb」です。
- また、以下の図の赤線のところについてを調べたのが「PL.Overlayについて.ipynb」です。
+ また、以下の図の赤線のところについてを調べたのが「./PL.Overlayについて.ipynb」です。
  ![](./led_overlay3.png) 
  
