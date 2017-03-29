@@ -12,3 +12,8 @@ pynqmmult-master,　my_pynqmmult_2015_4,　my_pynqmmult_2016_1はその試行錯
 2015_4ではsoファイルが認識されませんでしたが、 2016_1ではtkat0さんのpynqmmultと同じ結果を出しました。このことから、正しくSDSocプラットフォームが作れたことが確認できました。
 
 その上で自分の独自のプログラムで色々試そうとしましたが、CFFIの仕組みがよくわからず、間に合いませんでした。その途中のプログラムが「test_PYNQ_2016_1」です。
+
+SDSocでの開発の流れを図示したものが以下です。
+![](./SDSoc.png)  
+そして、my_pynqmmult_2016_1で作成したPL回路は以下になりました。
+![](./my_pynqmmult_2016_1/PYNQ_2016_1 - [C__Users_ryuta_Documents_SDSoc_2016_1_test_mmult_2016_1_SDRelease__sds_p0_ipi_PYNQ_2016_1.xpr] - Vivado 2016.1 2017_03_29 19_13_20.png)  
