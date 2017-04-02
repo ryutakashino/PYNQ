@@ -1,0 +1,119 @@
+状況：tkat0の作成したpynqmmultを目標に作成したプロジェクトをビルドした時のログ
+状況：SDSoc/2015_4/sample/mmult/以下のmmult.cpp, mmult_accel.cpp, mmult_accel.h
+状況：をsrc/以下にコピーをして、mmult_accel関数をアクセラレーションした。
+状況：イマイチわからないが、今回はmmult.cppは必要なかったのではないだろうか。
+
+00:21:50 **** Build of configuration SDRelease for project test_pynq_mmult ****
+make pre-build main-build 
+sdsoc_make_clean SDRelease
+' '
+'Building file: ../src/mmult.cpp'
+'Invoking: SDS++ Compiler'
+sds++ -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/mmult.o" -MMD -MP -MF"src/mmult.d" -MT"src/mmult.d" -o "src/mmult.o" "../src/mmult.cpp" -sds-hw mmult_accel mmult_accel.cpp  -clkid 2 -sds-end -fPIC  -sds-pf C:\Users\ryuta\Documents\SDSocPFM\2015_4\PYNQ_2015_4
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease>C:\Xilinx\SDSoC\2015.4\llvm-clang\win64\llvm\bin\clang.exe -target arm-xilinx-linux-gnueabi -mcpu=cortex-a9 -mfpu=vfp -O0 -g -I C:/Xilinx/SDSoC/2015.4/arm-xilinx-linux-gnueabi/include -I C:/Xilinx/SDSoC/2015.4/Vivado_HLS/2015.4/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2 -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2/arm-xilinx-linux-gnueabi -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2/backward -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include-fixed -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/libc/usr/include -I../src -Wall -fmessage-length=0 -MMD -MP -fPIC -D __SDSCC__ -emit-llvm -S C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src/mmult.cpp -o C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/.llvm/src/mmult.s 
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease>exit /b 0 
+INFO: [SDSoC 0-0] Compiling C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src/mmult.cpp
+sds++ log file saved as C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/reports/sds_mmult.log
+
+'Finished building: ../src/mmult.cpp'
+' '
+'Building file: ../src/mmult_accel.cpp'
+'Invoking: SDS++ Compiler'
+sds++ -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/mmult_accel.o" -MMD -MP -MF"src/mmult_accel.d" -MT"src/mmult_accel.d" -o "src/mmult_accel.o" "../src/mmult_accel.cpp" -sds-hw mmult_accel mmult_accel.cpp  -clkid 2 -sds-end -fPIC  -sds-pf C:\Users\ryuta\Documents\SDSocPFM\2015_4\PYNQ_2015_4
+INFO: [SDSoC 0-0] Processing -sds-hw block for mmult_accel
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease>C:\Xilinx\SDSoC\2015.4\llvm-clang\win64\llvm\bin\clang.exe -target arm-xilinx-linux-gnueabi -mcpu=cortex-a9 -mfpu=vfp -O0 -g -I C:/Xilinx/SDSoC/2015.4/arm-xilinx-linux-gnueabi/include -I C:/Xilinx/SDSoC/2015.4/Vivado_HLS/2015.4/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2 -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2/arm-xilinx-linux-gnueabi -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2/backward -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include-fixed -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/libc/usr/include -I../src -Wall -fmessage-length=0 -MMD -MP -fPIC -D __SDSCC__ -emit-llvm -S C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src/mmult_accel.cpp -o C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/.llvm/src/mmult_accel.s 
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease>exit /b 0 
+INFO: [SDSoC 0-0] Performing accelerator source linting for mmult_accel
+INFO: [SDSoC 0-0] Performing pragma generation
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease>C:\Xilinx\SDSoC\2015.4\llvm-clang\win64\llvm\bin\clang.exe -E -target arm-xilinx-linux-gnueabi -mcpu=cortex-a9 -mfpu=vfp -O0 -g -w -I C:/Xilinx/SDSoC/2015.4/arm-xilinx-linux-gnueabi/include -I C:/Xilinx/SDSoC/2015.4/Vivado_HLS/2015.4/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2 -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2/arm-xilinx-linux-gnueabi -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include/c++/4.9.2/backward -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/lib/gcc/arm-xilinx-linux-gnueabi/4.9.2/include-fixed -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/include -IC:/Xilinx/SDSoC/2015.4/SDK/2015.4/gnu/arm/nt/arm-xilinx-linux-gnueabi/libc/usr/include -IC:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src -Wall -fmessage-length=0 -MMD -MP -fPIC -D __SDSCC__ -I C:/Xilinx/SDSoC/2015.4/arm-xilinx-linux-gnueabi/include -IC:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src -D __SDSVHLS__ C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/src/mmult_accel.cpp -o C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/vhls/mmult_accel_pp.cpp 
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease>exit /b 0 
+INFO: [SDSoC 0-0] Successfully generated tcl script: C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/vhls/mmult_accel.tcl
+INFO: [SDSoC 0-0] Moving function mmult_accel to Programmable Logic
+sds++ log file saved as C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/reports/sds_mmult_accel.log
+
+'Finished building: ../src/mmult_accel.cpp'
+' '
+'Building target: test_pynq_mmult.so'
+'Invoking: SDS++ Linker'
+sds++  -o "test_pynq_mmult.so"  ./src/mmult.o ./src/mmult_accel.o    -dmclkid 2  -shared  -sds-pf C:\Users\ryuta\Documents\SDSocPFM\2015_4\PYNQ_2015_4
+INFO: [SDSoC 0-0] Analyzing object files
+... C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/src/mmult.o
+... C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/src/mmult_accel.o
+INFO: [SDSoC 0-0] Generating data motion network
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease>C:\Xilinx\SDSoC\2015.4\llvm-clang\win64\llvm\bin\llvm-link.exe -o C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/.llvm/sds_all.o C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/.llvm/./src/mmult.s C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/.llvm/./src/mmult_accel.s 
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease>exit /b 0 
+
+C:\Users\ryuta\Documents\SDSoc\test_pynq_mmult\SDRelease\_sds\.llvm>opt -disable-output -instcombine -mem2reg -basicaa -XidanePass --platform PYNQ_2015_4 --dmclkid 2 --repo C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/.cdb/xd_ip_db.xml --dmdb C:/Xilinx/SDSoC/2015.4/data/DM.db -os linux  0<sds_all.o 
+INFO: [SDSoC 0-0] Analyzing hardware accelerators...
+INFO: [SDSoC 0-0] Analyzing callers to hardware accelerators...
+INFO: [SDSoC 0-0] Scheduling data transfer graph for partition 0
+INFO: [SDSoC 0-0] Creating data motion network hardware for partition 0
+INFO: [SDSoC 0-0] Creating software stub functions for partition 0
+INFO: [SDSoC 0-0] Generating data motion network report for partition 0
+INFO: [SDSoC 0-0] Rewriting caller code
+INFO: [SDSoC 0-0] Creating block diagram (BD), address map, port information and device registration for partition 0 (this may take a few minutes)
+system_linker started at Fri Mar 24 00:22:47 +0900 2017
+INFO: [SDSoC 0-0] Copying address map
+INFO: [SDSoC 0-0] Creating port and device registration data
+system_linker completed at Fri Mar 24 00:24:07 +0900 2017
+INFO: [SDSoC 0-0] Rewrite caller functions
+INFO: [SDSoC 0-0] Compile caller rewrite file C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/swstubs/mmult.cpp
+INFO: [SDSoC 0-0] Prepare hardware access API functions
+INFO: [SDSoC 0-0] Create accelerator stub functions
+INFO: [SDSoC 0-0] Compile hardware access API functions
+INFO: [SDSoC 0-0] Compile accelerator stub functions
+INFO: [SDSoC 0-0] Link application ELF file
+INFO: [SDSoC 0-0] Enable generation of hardware programming files
+INFO: [SDSoC 0-0] Enable generation of boot files
+INFO: [SDSoC 0-0] Calling system_linker for partition 0
+system_linker started at Fri Mar 24 00:24:10 +0900 2017
+INFO: [SDSoC 0-0] Generating bitstream for platform PYNQ_2015_4.
+      This may take some time to complete
+... [00:24:36] Starting synth_design
+... [00:24:41] Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 406.184 ; gain = 234.836
+... [08:28:07] Start Loading Part and Timing Information
+... [08:28:07] Start Applying 'set_property' XDC Constraints
+... [08:28:52] Start RTL Component Statistics 
+... [08:28:52] Start RTL Hierarchical Component Statistics 
+... [08:28:52] Start Part Resource Summary
+... [08:28:52] Start Parallel Synthesis Optimization  : Time (s): cpu = 00:18:33 ; elapsed = 08:04:26 . Memory (MB): peak = 1619.434 ; gain = 1448.086
+... [08:29:02] Start Cross Boundary Optimization
+... [08:29:22] Start Area Optimization
+... [08:30:02] Start Timing Optimization
+... [08:30:17] Start Applying XDC Timing Constraints
+... [08:30:42] Start Technology Mapping
+... [08:31:37] Start IO Insertion
+... [08:31:37] Start Flattening Before IO Insertion
+... [08:31:37] Start Final Netlist Cleanup
+... [08:31:42] Start Renaming Generated Instances
+... [08:31:52] Start Rebuilding User Hierarchy
+... [08:31:57] Start Renaming Generated Ports
+... [08:32:02] Start Handling Custom Attributes
+... [08:32:02] Start Renaming Generated Nets
+... [08:32:02] Start Writing Synthesis Report
+... [08:33:35] Starting DRC Task
+... [08:33:40] Starting Logic Optimization Task
+... [08:34:00] Starting Connectivity Check Task
+... [08:34:00] Starting Power Optimization Task
+... [08:34:21] Starting PowerOpt Patch Enables Task
+... [08:34:41] Starting Placer Task
+... [08:36:56] Starting Routing Task
+INFO: [SDSoC 0-0] Creating boot files
+system_linker completed at Fri Mar 24 09:05:37 +0900 2017
+All user specified timing constraints are met.
+sds++ log file saved as C:/Users/ryuta/Documents/SDSoc/test_pynq_mmult/SDRelease/_sds/reports/sds.log
+
+'Finished building target: test_pynq_mmult.so'
+' '
+
+09:05:38 Build Finished (took 8h:43m:47s.749ms)
