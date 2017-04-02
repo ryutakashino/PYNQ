@@ -1,0 +1,120 @@
+2017/03/29
+
+ó‹µ:SDSoc2016.1‚ð‚à‚¿‚¢‚Ämmult_accel‚ÌHW‰»‚ð‚µ‚½ SDSoc/2016.1/sample/mmult‚ðƒrƒ‹ƒh‚µ‚½ƒƒO
+00:55:28 **** Build of configuration SDRelease for project test_mmult_2016_1 ****
+make pre-build main-build 
+sdsoc_make_clean SDRelease
+' '
+'Building file: ../src/mmult.cpp'
+'Invoking: SDS++ Compiler'
+sds++ -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/mmult.o" -MMD -MP -MF"src/mmult.d" -MT"src/mmult.o" -o "src/mmult.o" "../src/mmult.cpp" -sds-hw mmult_accel mmult_accel.cpp  -clkid 2 -sds-end -fPIC  -sds-pf C:\Users\ryuta\Documents\SDSocPFM\2016_1\PYNQ_2016_1
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease>C:\Xilinx\SDSoC\2016.1\llvm-clang\win64\llvm\bin\clang.exe -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -I C:/Xilinx/SDSoC/2016.1/aarch32-linux/include -I C:/Xilinx/SDSoC/2016.1/Vivado_HLS/2016.1/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2 -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2/arm-linux-gnueabihf -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2/backward -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/4.9.2/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/4.9.2/include-fixed -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -I../src -Wall -fmessage-length=0 -MMD -MP -fPIC -D __SDSCC__ -emit-llvm -S C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/src/mmult.cpp -o C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/.llvm/src/mmult.s 
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease>exit /b 0 
+INFO: [SDSoC 0-0] Compiling C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/src/mmult.cpp
+sds++ log file saved as C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/reports/sds_mmult.log
+
+'Finished building: ../src/mmult.cpp'
+' '
+'Building file: ../src/mmult_accel.cpp'
+'Invoking: SDS++ Compiler'
+sds++ -Wall -O3 -I"../src" -c -fmessage-length=0 -MT"src/mmult_accel.o" -MMD -MP -MF"src/mmult_accel.d" -MT"src/mmult_accel.o" -o "src/mmult_accel.o" "../src/mmult_accel.cpp" -sds-hw mmult_accel mmult_accel.cpp  -clkid 2 -sds-end -fPIC  -sds-pf C:\Users\ryuta\Documents\SDSocPFM\2016_1\PYNQ_2016_1
+INFO: [SDSoC 0-0] Processing -sds-hw block for mmult_accel
+INFO: [SDSoC 0-0] Create data motion intermediate representation
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease>C:\Xilinx\SDSoC\2016.1\llvm-clang\win64\llvm\bin\clang.exe -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -I C:/Xilinx/SDSoC/2016.1/aarch32-linux/include -I C:/Xilinx/SDSoC/2016.1/Vivado_HLS/2016.1/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2 -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2/arm-linux-gnueabihf -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2/backward -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/4.9.2/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/4.9.2/include-fixed -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -I../src -Wall -fmessage-length=0 -MMD -MP -fPIC -D __SDSCC__ -emit-llvm -S C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/src/mmult_accel.cpp -o C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/.llvm/src/mmult_accel.s 
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease>exit /b 0 
+INFO: [SDSoC 0-0] Performing accelerator source linting for mmult_accel
+INFO: [SDSoC 0-0] Performing pragma generation
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease>C:\Xilinx\SDSoC\2016.1\llvm-clang\win64\llvm\bin\clang.exe -E -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w -I C:/Xilinx/SDSoC/2016.1/aarch32-linux/include -I C:/Xilinx/SDSoC/2016.1/Vivado_HLS/2016.1/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2 -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2/arm-linux-gnueabihf -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include/c++/4.9.2/backward -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/4.9.2/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/4.9.2/include-fixed -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -IC:/Xilinx/SDSoC/2016.1/SDK/2016.1/gnu/aarch32/nt/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include -IC:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/src -Wall -fmessage-length=0 -MMD -MP -fPIC -D __SDSCC__ -I C:/Xilinx/SDSoC/2016.1/aarch32-linux/include -IC:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/src -D __SDSVHLS__ C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/src/mmult_accel.cpp -o C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/vhls/mmult_accel_pp.cpp 
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease>exit /b 0 
+INFO: [SDSoC 0-0] Successfully generated tcl script: C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/vhls/mmult_accel.tcl
+INFO: [SDSoC 0-0] Moving function mmult_accel to Programmable Logic
+sds++ log file saved as C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/reports/sds_mmult_accel.log
+
+'Finished building: ../src/mmult_accel.cpp'
+' '
+'Building target: test_mmult_2016_1.so'
+'Invoking: SDS++ Linker'
+sds++  -o "test_mmult_2016_1.so"  ./src/mmult.o ./src/mmult_accel.o    -dmclkid 2  -shared  -sds-pf C:\Users\ryuta\Documents\SDSocPFM\2016_1\PYNQ_2016_1
+INFO: [SDSoC 0-0] Analyzing object files
+... C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/src/mmult.o
+... C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/src/mmult_accel.o
+INFO: [SDSoC 0-0] Generating data motion network
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease>C:\Xilinx\SDSoC\2016.1\llvm-clang\win64\llvm\bin\llvm-link.exe -o C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/.llvm/sds_all.o C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/.llvm/./src/mmult.s C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/.llvm/./src/mmult_accel.s 
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease>exit /b 0 
+
+C:\Users\ryuta\Documents\SDSoc\2016_1\test_mmult_2016_1\SDRelease\_sds\.llvm>opt -disable-output -instcombine -mem2reg -basicaa -XidanePass --platform PYNQ_2016_1 --dmclkid 2 --repo C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/.cdb/xd_ip_db.xml --dmdb C:/Xilinx/SDSoC/2016.1/data/DM.db -os linux  0<sds_all.o 
+INFO: [SDSoC 0-0] Analyzing hardware accelerators...
+INFO: [SDSoC 0-0] Analyzing callers to hardware accelerators...
+INFO: [SDSoC 0-0] Scheduling data transfer graph for partition 0
+INFO: [SDSoC 0-0] Creating data motion network hardware for partition 0
+INFO: [SDSoC 0-0] Creating software stub functions for partition 0
+INFO: [SDSoC 0-0] Generating data motion network report for partition 0
+INFO: [SDSoC 0-0] Rewriting caller code
+INFO: [SDSoC 0-0] Creating block diagram (BD), address map, port information and device registration for partition 0 (this may take a few minutes)
+system_linker started at Tue Mar 28 00:56:22 +0900 2017
+INFO: [SDSoC 0-0] Copying address map
+INFO: [SDSoC 0-0] Creating port and device registration data
+system_linker completed at Tue Mar 28 00:57:44 +0900 2017
+INFO: [SDSoC 0-0] Rewrite caller functions
+INFO: [SDSoC 0-0] Compile caller rewrite file C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/swstubs/mmult.cpp
+INFO: [SDSoC 0-0] Prepare hardware access API functions
+INFO: [SDSoC 0-0] Create accelerator stub functions
+INFO: [SDSoC 0-0] Compile hardware access API functions
+INFO: [SDSoC 0-0] Compile accelerator stub functions
+INFO: [SDSoC 0-0] Link application ELF file
+INFO: [SDSoC 0-0] Enable generation of hardware programming files
+INFO: [SDSoC 0-0] Enable generation of boot files
+INFO: [SDSoC 0-0] Calling system_linker for partition 0
+system_linker started at Tue Mar 28 00:57:46 +0900 2017
+INFO: [SDSoC 0-0] Generating bitstream for platform PYNQ_2016_1.
+      This may take some time to complete
+... [11:02:04] Starting synth_design
+... [11:02:10] Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 440.074 ; gain = 233.586
+... [11:02:25] Start Loading Part and Timing Information
+... [11:02:25] Start Applying 'set_property' XDC Constraints
+... [11:02:25] Start RTL Component Statistics 
+... [11:02:25] Start RTL Hierarchical Component Statistics 
+... [11:02:25] Start Part Resource Summary
+... [11:02:25] Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 780.496 ; gain = 574.008
+... [11:02:25] Start Cross Boundary Optimization
+... [11:02:25] Start Area Optimization
+... [11:02:25] Start Timing Optimization
+... [11:02:36] Start Applying XDC Timing Constraints
+... [11:02:36] Start Technology Mapping
+... [11:02:36] Start IO Insertion
+... [11:02:36] Start Flattening Before IO Insertion
+... [11:02:36] Start Final Netlist Cleanup
+... [11:02:36] Start Renaming Generated Instances
+... [11:02:36] Start Rebuilding User Hierarchy
+... [11:02:36] Start Renaming Generated Ports
+... [11:02:36] Start Handling Custom Attributes
+... [11:02:36] Start Renaming Generated Nets
+... [11:02:36] Start Writing Synthesis Report
+... [11:03:23] Starting DRC Task
+... [11:03:39] Starting Logic Optimization Task
+... [11:04:05] Starting Connectivity Check Task
+... [11:04:05] Starting Power Optimization Task
+... [11:04:21] Starting PowerOpt Patch Enables Task
+... [11:04:42] Starting Placer Task
+... [11:07:08] Starting Routing Task
+INFO: [SDSoC 0-0] Creating boot files
+ERROR:BootGen - syntax error
+ERROR:BootGen - syntax error
+system_linker completed at Wed Mar 29 11:10:06 +0900 2017
+All user specified timing constraints are met.
+sds++ log file saved as C:/Users/ryuta/Documents/SDSoc/2016_1/test_mmult_2016_1/SDRelease/_sds/reports/sds.log
+
+'Finished building target: test_mmult_2016_1.so'
+' '
+
+11:10:06 Build Finished (took 1d,10h:14m:38s.209ms)
+
